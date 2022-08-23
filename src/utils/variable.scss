@@ -1,0 +1,9 @@
+@mixin button-shadow {
+    box-shadow: 1px 2px 3px 4px lightgrey;
+}
+
+@mixin hover-effet {
+    transform: scale(1.1);
+        transition: all 1000ms;
+        opacity: 0.9;
+}

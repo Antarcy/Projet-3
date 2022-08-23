@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
+@import "../utils/variable.scss";
+
+
 
 
 *{
@@ -24,6 +27,10 @@ body{
 }
 
 
+
+
+// recherche de lieu
+
 .lieu{
     text-align: center;
     border: 1px solid lightgray;
@@ -38,7 +45,7 @@ body{
 }
 
 
-
+// section numero 1
 .Premiere_Section{
     text-align: center;
     h2{
@@ -51,19 +58,42 @@ button{
     border-radius: 30px;
     border: none;
     color: white;
-    box-shadow: 1px 2px 3px 4px lightgrey;
+    @include button-shadow;
     margin-top: 1.3rem;
     font-size: 1.1rem;
-   
-}
-button:hover{
-    transform: scale(1.1);
-    transition: all 1000ms;
-    opacity: 0.9;
-  
+    &:hover{
+        @include hover-effet;
+      
+    }
 }
 }
 
+// FONCTIONNEMENT
+
+.fonctionnement{
+    padding-left: 1rem;
+    ol{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap:2rem;
+        @media (max-width: 866px)
+        {
+            flex-direction: column;
+        } 
+    }
+    li{
+        background-color: #f6f6f6;
+        padding: 1rem 2rem;
+        border: 1px solid red;
+        flex-grow: 1;
+        border-radius: 1rem;
+        @include button-shadow;
+        &:hover{
+            @include hover-effet;
+        }
+    }
+}
 
    
 
