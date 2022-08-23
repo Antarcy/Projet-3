@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Mon projet p3 ohmyfood OPC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antarcy/Projet-3.git"
+  },
+  "author": "Louis Le Gars",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Antarcy/Projet-3/issues"
+  },
+  "homepage": "https://github.com/Antarcy/Projet-3#readme",
+  "dependencies": {
+    "sass": "^1.54.5"
+  }
+}
