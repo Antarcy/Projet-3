@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+/* EN TETE */
+header {
+  font-family: "Shrikhand", sans-serif;
+  text-align: center;
+  box-shadow: 1px 2px 3px grey;
+  padding-bottom: 0.3rem;
+  position: relative;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.lieu {
+  text-align: center;
+  border: 1px solid lightgray;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.lieu i {
+  font-size: 1.5rem;
+}
+
+.Premiere_Section {
+  text-align: center;
+}
+.Premiere_Section h2 {
+  font-size: 1.7rem;
+  margin-top: 2.5rem;
+}
+.Premiere_Section button {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  box-shadow: 1px 2px 3px 4px lightgrey;
+  margin-top: 1.3rem;
+  font-size: 1.1rem;
+}
+.Premiere_Section button:hover {
+  transform: scale(1.1);
+  transition: all 1000ms;
+  opacity: 0.9;
+}/*# sourceMappingURL=styles.css.map */
