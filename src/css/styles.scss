@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-@import "../utils/variable.scss";
+@use "../utils/variable-mixin.scss" as vari;
 
 
 
@@ -58,11 +58,11 @@ button{
     border-radius: 30px;
     border: none;
     color: white;
-    @include button-shadow;
+    @include vari.button-shadow;
     margin-top: 1.3rem;
     font-size: 1.1rem;
     &:hover{
-        @include hover-effet;
+        @include vari.hover-effet;
       
     }
 }
@@ -88,9 +88,9 @@ button{
         border: 1px solid red;
         flex-grow: 1;
         border-radius: 1rem;
-        @include button-shadow;
+        @include vari.button-shadow;
         &:hover{
-            @include hover-effet;
+            @include vari.hover-effet;
         }
     }
 }
