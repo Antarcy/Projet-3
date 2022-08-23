@@ -1,7 +1,10 @@
+@use "../utils/variable-mixin.scss" as vari;
+
+
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-@use "../utils/variable-mixin.scss" as vari;
+
 
 
 
@@ -68,29 +71,51 @@ button{
 }
 }
 
+
 // FONCTIONNEMENT
 
 .fonctionnement{
+    counter-reset: zero;
     padding-left: 1rem;
     ol{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
         gap:2rem;
-        @media (max-width: 866px)
+        list-style-type: none;
+        @media (max-width: 960px)
         {
             flex-direction: column;
         } 
     }
-    li{
+   & li{
         background-color: #f6f6f6;
-        padding: 1rem 2rem;
-        border: 1px solid red;
+        padding: 1.6rem 2rem;
         flex-grow: 1;
         border-radius: 1rem;
+        position: relative;
         @include vari.button-shadow;
+       &::before{
+        content: counter(zero);
+        counter-increment: zero;
+        color: white;
+        background-color: #9356DC;
+        display: flex;
+        width: 2rem;
+        height: 2rem;
+        align-items: center;
+        justify-content: center;
+         border-radius: 50%;
+         position: absolute;
+         bottom: 1rem;
+         left: -1rem;
+       }
         &:hover{
             @include vari.hover-effet;
+        }
+        & i.logo{
+            color: grey;
+            padding: 0 1rem 0 0.5rem;
         }
     }
 }

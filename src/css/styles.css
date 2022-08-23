@@ -54,6 +54,7 @@ body {
 }
 
 .fonctionnement {
+  counter-reset: zero;
   padding-left: 1rem;
 }
 .fonctionnement ol {
@@ -61,22 +62,42 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 2rem;
+  list-style-type: none;
 }
-@media (max-width: 866px) {
+@media (max-width: 960px) {
   .fonctionnement ol {
     flex-direction: column;
   }
 }
 .fonctionnement li {
   background-color: #f6f6f6;
-  padding: 1rem 2rem;
-  border: 1px solid red;
+  padding: 1.6rem 2rem;
   flex-grow: 1;
   border-radius: 1rem;
+  position: relative;
   box-shadow: 1px 2px 3px 4px lightgrey;
+}
+.fonctionnement li::before {
+  content: counter(zero);
+  counter-increment: zero;
+  color: white;
+  background-color: #9356DC;
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1rem;
+  left: -1rem;
 }
 .fonctionnement li:hover {
   transform: scale(1.1);
   transition: all 1000ms;
   opacity: 0.9;
+}
+.fonctionnement li i.logo {
+  color: grey;
+  padding: 0 1rem 0 0.5rem;
 }/*# sourceMappingURL=styles.css.map */
