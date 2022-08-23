@@ -8,7 +8,7 @@
 }
 
 
-/* HEADER */
+/* EN TETE */
 header{
     font-family: "Shrikhand", sans-serif;
     text-align: center;
@@ -39,9 +39,35 @@ body{
     font-size: 1.5rem;
 }
 
+.Premiere_Section{
+    text-align: center;
+}
+
+.Premiere_Section h2{
+    font-size: 1.7rem;
+    margin-top: 2.5rem;
+   
+}
 
 
-/**/
+.Premiere_Section button{
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    box-shadow: 1px 2px 3px 4px lightgrey;
+    margin-top: 1.3rem;
+    font-size: 1.1rem;
+}
+
+.Premiere_Section button:hover{
+    transform: scale(1.1);
+    transition: all 1000ms;
+    opacity: 0.9;
+  
+}
+/* Premiere Section*/
 
 
 
