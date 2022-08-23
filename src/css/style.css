@@ -12,12 +12,36 @@
 header{
     font-family: "Shrikhand", sans-serif;
     text-align: center;
-    box-shadow: 1px 2px 3px lightgrey;
+    box-shadow: 1px 2px 3px grey;
     padding-bottom: 0.3rem;
+    position: relative;
+    
 }
 
-/*BAR NAVIGATION*/
 
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+
+.lieu{
+    text-align: center;
+    border: 1px solid lightgray;
+    background-color: #f3f3f3;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+
+}
+
+.lieu i{
+    font-size: 1.5rem;
+}
+
+
+
+/**/
 
 
 
