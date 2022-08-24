@@ -49,7 +49,7 @@ body{
 
 
 // section numero 1
-.Premiere_Section{
+.premiere_section{
     text-align: center;
     h2{
         font-size: 1.7rem;
@@ -77,11 +77,13 @@ button{
 .fonctionnement{
     counter-reset: zero;
     padding-left: 1rem;
+    margin-bottom: 2rem;
     ol{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
         gap:2rem;
+        margin-right: 3rem;
         list-style-type: none;
         @media (max-width: 960px)
         {
@@ -90,7 +92,7 @@ button{
     }
    & li{
         background-color: #f6f6f6;
-        padding: 1.6rem 2rem;
+        padding: 1.6rem 1rem;
         flex-grow: 1;
         border-radius: 1rem;
         position: relative;
@@ -109,6 +111,7 @@ button{
          position: absolute;
          bottom: 1rem;
          left: -1rem;
+         
        }
         &:hover{
             @include vari.hover-effet;
@@ -121,6 +124,71 @@ button{
 }
 
    
+
+.menu_section{
+    background-color: #f6f6f6;
+    h2{
+        margin-top: 2.5rem;
+        padding-left: 1rem;
+        margin-bottom: 0.5rem;
+        padding-top: 2rem;
+       
+}
+.menu_carte{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+
+ .nouveau{
+    border: 1px solid red;
+    position: relative;
+ }
+.nouveau::before{
+    content: "Nouveau";
+position: absolute;
+height: 2rem;
+width: 6rem;
+background-color: #99E2D0;
+}
+    @media (max-width: 960px)
+    {
+        grid-template-columns: 1fr;
+    } 
+    }
+.carte{
+    flex-grow: 1;
+    min-width: 15rem;
+   .images_resto1{
+    background-image: url(../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    min-height: 12rem;
+    background-size: cover;
+    border-radius: 2rem 2rem 0 0;
+}
+    .images_resto2{
+        background-image: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+        min-height: 12rem;
+        background-size: cover;
+        border-radius: 2rem 2rem 0 0;
+    }
+    .images_resto3{
+        background-image: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+        min-height: 12rem;
+        background-size: cover;
+        border-radius: 2rem 2rem 0 0;
+    }
+    .images_resto4{
+        background-image: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+        min-height: 12rem;
+        background-size: cover;
+        border-radius: 2rem 2rem 0 0;
+    }
+
+}
+}
+
+
+
+
 
 
 
