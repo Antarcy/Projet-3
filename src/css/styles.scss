@@ -27,8 +27,15 @@ header{
 
 body{
     font-family: "Roboto", sans-serif;
+    
 }
-
+main{
+    padding: 0 1rem 0 1rem;
+    @media (max-width: 960px)
+    {
+        padding: 0;
+    } 
+}
 
 
 
@@ -42,8 +49,14 @@ body{
    align-items: center;
    justify-content: center;
    gap: 1rem;
+   
    i{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+}
+
+h2{
+    font-size: 1rem;
+    font-weight: 500;
 }
 }
 
@@ -229,9 +242,29 @@ top: 1rem;
 .pied_de_page{
     background-color: rgb(43, 43, 43);
     color: white;
+    margin-bottom: -1rem;
+    padding-left: 2rem;
+   
     h2{
         font-family: "Shrikhand", sans-serif;
+        padding-top: 1.5rem;
+        font-size: 1.1rem;
+        font-weight: 400;
+
     }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+   .couvert{
+    padding-right: 0.8rem;
+   }
+   .logomain{
+    padding-right: 0.4rem;
+   }
+   p{
+    margin: 5px;
+   }
 }
 
 

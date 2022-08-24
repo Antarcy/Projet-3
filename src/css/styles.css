@@ -17,6 +17,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  padding: 0 1rem 0 1rem;
+}
+@media (max-width: 960px) {
+  main {
+    padding: 0;
+  }
+}
+
 .lieu {
   text-align: center;
   border: 1px solid lightgray;
@@ -27,7 +36,11 @@ body {
   gap: 1rem;
 }
 .lieu i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+.lieu h2 {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .premiere_section {
@@ -199,7 +212,25 @@ body {
 .pied_de_page {
   background-color: rgb(43, 43, 43);
   color: white;
+  margin-bottom: -1rem;
+  padding-left: 2rem;
 }
 .pied_de_page h2 {
   font-family: "Shrikhand", sans-serif;
+  padding-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.pied_de_page a {
+  text-decoration: none;
+  color: white;
+}
+.pied_de_page .couvert {
+  padding-right: 0.8rem;
+}
+.pied_de_page .logomain {
+  padding-right: 0.4rem;
+}
+.pied_de_page p {
+  margin: 5px;
 }/*# sourceMappingURL=styles.css.map */
