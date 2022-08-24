@@ -119,7 +119,6 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 .menu_section .menu_carte .nouveau {
-  border: 1px solid red;
   position: relative;
 }
 .menu_section .menu_carte .nouveau::before {
@@ -128,6 +127,11 @@ body {
   height: 2rem;
   width: 6rem;
   background-color: #99E2D0;
+  color: #217460;
+  display: grid;
+  place-items: center;
+  right: 2rem;
+  top: 1rem;
 }
 @media (max-width: 960px) {
   .menu_section .menu_carte {

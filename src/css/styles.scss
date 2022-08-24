@@ -140,7 +140,7 @@ button{
     grid-template-columns: 1fr 1fr;
 
  .nouveau{
-    border: 1px solid red;
+    
     position: relative;
  }
 .nouveau::before{
@@ -149,6 +149,11 @@ position: absolute;
 height: 2rem;
 width: 6rem;
 background-color: #99E2D0;
+color: darken($color: #99E2D0, $amount: 45%);
+display: grid;
+place-items: center;
+right: 2rem;
+top: 1rem;
 }
     @media (max-width: 960px)
     {
