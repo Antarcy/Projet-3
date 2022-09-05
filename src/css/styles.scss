@@ -357,43 +357,38 @@ top: 1rem;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 1rem;
+  .choix_plats
+  {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     .pres_plats
     {
-       
     margin: 0;
     border-radius: 1rem;
     display: flex;
-    overflow: hidden;
-       background-color: white;
-       box-shadow: -1px 2px 3px grey;
+    background-color: white;
+    box-shadow: -1px 2px 3px grey;
+   
         & > *{
-           
             padding: 1.1rem;
             
         }
-    
          &:hover{
             transition: all 1s;
               margin-right: 0.5rem;
-              overflow: visible;
               border-radius: 1rem;
-             
               .menu-prix_check{
              box-shadow: 0px 2px 2px grey;
                 margin: 0;
                 transition: all 300ms;
               }
          }
-            h4{
-                padding: 0;
-                margin: 0;
-            }
-           
+            
+        }   
 
     }
-    p{
-        margin: 0;
-    }
+    
         h3{
             margin: 0;
         }
@@ -405,10 +400,19 @@ top: 1rem;
         align-items: flex-end;
     }
 
+    .pres_plats_desc{
+     overflow: hidden;
+        h4, p{
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+       
+    }
 
     .menu-prix_check{
-       
-
       background-color: #99E2D0;  
       border-radius: 0 1rem 1rem 0;
       margin-right: -5rem;
@@ -421,17 +425,13 @@ top: 1rem;
         width: 2rem;
         border-radius: 1rem;
         color: #99E2D0;
+        &:hover{
+         animation: anim-spin 500ms;
         }
-  
+        }
+
     }
-   
     
-
-
-
-
-
-
     @media (max-width: 960px)
   {
       grid-template-columns: 1fr;
@@ -441,3 +441,4 @@ top: 1rem;
 
 
 
+  
