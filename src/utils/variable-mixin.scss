@@ -5,5 +5,5 @@
 @mixin hover-effet {
     transform: scale(1.1);
         transition: all 1000ms;
-        opacity: 0.9;
+        background-color: #f5edff;
 }

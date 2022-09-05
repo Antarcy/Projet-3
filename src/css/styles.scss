@@ -170,11 +170,11 @@ h3{
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
-    
+    padding: 0rem 1rem 0rem 1rem;
  .nouveau{
-    
     position: relative;
  }
+
 .nouveau::before{
     content: "Nouveau";
 position: absolute;
@@ -226,15 +226,28 @@ top: 1rem;
 
 .description_resto{
     position: relative;
-    i{
+    border-radius: 0 0 2rem 2rem;
+    background-color: white;
+    .fa-regular{
         font-size: 1.9rem;
         position: absolute;
         right: 1rem;
         bottom: 1.5rem;
     }
- 
-    border-radius: 0 0 2rem 2rem;
-    background-color: white;
+    .fa-solid{
+        font-size: 1.9rem;
+        position: absolute;
+        right: 1rem;
+        bottom: 1.5rem;
+        color: transparent;
+        &:hover{
+        background-image: linear-gradient(#9356DC,#FF79DA);
+        background-clip: text;
+        transform: scale(1.15);
+        transition: all 400ms ease-in-out;
+        }
+    }
+
 }
 
 
@@ -270,4 +283,40 @@ top: 1rem;
 
 
 
+// PARTIES MENUS 1 à 4 
 
+.images_menus{
+    max-width: 100%;
+}
+
+.titres_menus{
+    font-family: "Shrikhand", sans-serif;
+    padding: 1rem 1rem 0rem 1.5rem;
+}
+
+
+.coeur_resto{
+    position: relative;
+    border-radius: 0 0 2rem 2rem;
+    background-color: white;
+    .fa-regular{
+        font-size: 1.7rem;
+        position: absolute;
+        right: 1rem;
+        bottom: 0.3rem;
+    }
+    .fa-solid{
+        font-size: 1.7rem;
+        position: absolute;
+        right: 1rem;
+        bottom: 0.3rem;
+        color: transparent;
+        &:hover{
+        background-image: linear-gradient(#9356DC,#FF79DA);
+        background-clip: text;
+        transform: scale(1.15);
+        transition: all 400ms ease-in-out;
+        }
+    }
+
+}
