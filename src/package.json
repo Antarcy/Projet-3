@@ -4,7 +4,8 @@
   "description": "Mon projet p3 ohmyfood OPC",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./css/styles.scss ./css/styles.css",
+    "prefix": "postcss ./css/styles.css -u autoprefixer -o ./build/style.min.css"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,10 @@
     "url": "https://github.com/Antarcy/Projet-3/issues"
   },
   "homepage": "https://github.com/Antarcy/Projet-3#readme",
-  "dependencies": {
-    "sass": "^1.54.5"
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.54.9"
   }
 }
