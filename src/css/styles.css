@@ -18,18 +18,64 @@
 }
 @-webkit-keyframes pop-up {
   0% {
-    transform: scale(0);
+    transform: translateY(90%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 @keyframes pop-up {
   0% {
+    transform: translateY(90%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes loading {
+  0% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
     transform: scale(0);
   }
   100% {
-    transform: scale(1);
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+@keyframes loading {
+  0% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+    opacity: 1;
   }
 }
 * {
@@ -43,6 +89,29 @@ header {
   box-shadow: 1px 2px 3px grey;
   padding-bottom: 0.3rem;
   position: relative;
+}
+
+.loading_screen {
+  position: fixed;
+  inset: 0;
+  background-color: #e4e4e4;
+  opacity: 0.9;
+  height: 100vh;
+  z-index: 1;
+  -webkit-animation: loading 3s 1s forwards;
+          animation: loading 3s 1s forwards;
+  display: grid;
+  place-items: center;
+  transform-origin: center;
+}
+.loading_screen::after {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+  content: "";
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: linear-gradient(#FF79DA, #9356DC);
 }
 
 body {
@@ -119,6 +188,8 @@ main {
 }
 .fonctionnement li {
   background-color: #f6f6f6;
+  font-weight: bold;
+  font-size: 14px;
   padding: 1.6rem 1rem;
   flex-grow: 1;
   border-radius: 1rem;
@@ -141,7 +212,6 @@ main {
   left: -1rem;
 }
 .fonctionnement li:hover {
-  transform: scale(1.1);
   transition: all 1000ms;
   background-color: #f5edff;
 }
@@ -160,8 +230,8 @@ main {
 .menu_section h2 {
   margin-top: 2.5rem;
   padding-left: 1rem;
-  margin-bottom: 0.5rem;
-  padding-top: 2rem;
+  margin-bottom: 1.4rem;
+  padding-top: 3.5rem;
 }
 .menu_section h3, .menu_section p {
   margin: 0rem;
@@ -178,7 +248,7 @@ main {
 }
 .menu_section .menu_carte {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: 1fr 1fr;
   padding: 0rem 1rem 0rem 1rem;
 }
@@ -200,6 +270,8 @@ main {
 @media (max-width: 960px) {
   .menu_section .menu_carte {
     grid-template-columns: 1fr;
+    margin-bottom: -1rem;
+    padding-bottom: 3rem;
   }
 }
 .menu_section .carte {
@@ -312,12 +384,16 @@ main {
 
 .images_menus {
   width: 100%;
-  height: 40vh;
+  height: 15vh;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center bottom;
-     object-position: center bottom;
+  -o-object-position: center;
+     object-position: center;
   margin-bottom: -1.2rem;
+}
+
+.image4 {
+  height: 25vh;
 }
 
 .logo_menu {
@@ -363,7 +439,7 @@ main {
 
 .menu_plats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 0.5rem;
   padding: 1rem;
 }
@@ -371,13 +447,67 @@ main {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  -webkit-animation: pop-up 2s;
+          animation: pop-up 2s;
+}
+.menu_plats .choix_plats:nth-child(1) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+.menu_plats .choix_plats:nth-child(2) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+.menu_plats .choix_plats:nth-child(3) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+.menu_plats .choix_plats:nth-child(4) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+.menu_plats .choix_plats:nth-child(5) {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+.menu_plats .choix_plats:nth-child(6) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+.menu_plats .choix_plats:nth-child(7) {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+.menu_plats .choix_plats:nth-child(8) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+.menu_plats .choix_plats:nth-child(9) {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+.menu_plats .choix_plats:nth-child(10) {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+.menu_plats .choix_plats:nth-child(11) {
+  -webkit-animation-delay: 1100ms;
+          animation-delay: 1100ms;
+}
+.menu_plats .choix_plats:nth-child(12) {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+.menu_plats .choix_plats:nth-child(13) {
+  -webkit-animation-delay: 1300ms;
+          animation-delay: 1300ms;
 }
 .menu_plats .choix_plats .pres_plats {
   margin: 4px;
   border-radius: 1rem;
   display: flex;
   background-color: white;
-  box-shadow: 1px px 3px lightgrey;
+  box-shadow: 1px 0px 3px lightgrey;
 }
 .menu_plats .choix_plats .pres_plats > * {
   padding: 1.1rem;
@@ -438,7 +568,7 @@ main {
   place-items: center;
   background-color: #f6f6f6;
   border-radius: 50%;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   width: 2rem;
   border-radius: 1rem;
   color: #99E2D0;
@@ -451,7 +581,7 @@ main {
 
 .commander {
   text-align: center;
-  margin-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 .commander button {
   background-image: linear-gradient(#FF79DA, #9356DC);

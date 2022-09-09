@@ -25,6 +25,28 @@ header{
     
 }
 
+.loading_screen{
+    position: fixed;
+    inset: 0;
+    background-color: #e4e4e4;
+    opacity: 0.90;
+    height: 100vh;
+    z-index: 1;
+    animation: loading 3s 1s forwards;
+    display: grid;
+    place-items: center;
+    transform-origin: center;
+    &::after{
+        animation: spin 1s linear infinite;
+        content: "";
+        height: 100px;
+        width: 100px;    
+        border-radius: 50%;
+        background-image: linear-gradient(#FF79DA, #9356DC);
+}
+
+   
+}
 
 body{
     font-family: "Roboto", sans-serif;
@@ -79,7 +101,7 @@ button{
     font-size: 1.1rem;
     @include vari.button-shadow;
     &:hover{
-        @include vari.hover-effet;
+        @include vari.hover-effet-button;
         cursor: pointer;
       
     }
@@ -107,6 +129,8 @@ button{
     }
    & li{
         background-color: #f6f6f6;
+        font-weight: bold;
+        font-size: 14px;
         padding: 1.6rem 1rem;
         flex-grow: 1;
         border-radius: 1rem;
@@ -151,8 +175,8 @@ button{
     h2{
         margin-top: 2.5rem;
         padding-left: 1rem;
-        margin-bottom: 0.5rem;
-        padding-top: 2rem;   
+        margin-bottom: 1.4rem;
+        padding-top: 3.5rem;   
     }
 
 h3,p{
@@ -171,7 +195,7 @@ h3{
 }
 .menu_carte{
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     grid-template-columns: 1fr 1fr;
     padding: 0rem 1rem 0rem 1rem;
  .nouveau{
@@ -193,6 +217,8 @@ top: 1rem;
     @media (max-width: 960px)
     {
         grid-template-columns: 1fr;
+        margin-bottom: -1rem;
+        padding-bottom: 3rem;
     } 
     }
 .carte{
@@ -312,11 +338,15 @@ font-size: x-large;
 }
 .images_menus{
     width: 100%;
-    height: 40vh;
+    height: 15vh;
     object-fit: cover;
-   object-position: center bottom;
+   object-position: center;
    margin-bottom: -1.2rem;
 }
+
+.image4{
+    height: 25vh;
+   }
 
 .logo_menu{
     font-size: 2rem;
@@ -371,7 +401,7 @@ font-size: x-large;
 
 .menu_plats{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 0.5rem;
   padding: 1rem;
  
@@ -380,14 +410,19 @@ font-size: x-large;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    animation: pop-up 2s;
+       @for $i from 1 through 13 {
+        &:nth-child(#{$i}){
+           animation-delay: 100ms * $i;
+        }
+       }
     .pres_plats
     {
     margin: 4px;
     border-radius: 1rem;
     display: flex;
     background-color: white;
-    box-shadow: 1px px 3px lightgrey;
-   
+    box-shadow: 1px 0px 3px lightgrey;
         & > *{
             padding: 1.1rem;
             
@@ -456,7 +491,7 @@ font-size: x-large;
         place-items: center;
         background-color: #f6f6f6;
         border-radius: 50%;
-        aspect-ratio: 1;
+        aspect-ratio: 1/1;
         width: 2rem;
         border-radius: 1rem;
         color: #99E2D0;
@@ -470,6 +505,7 @@ font-size: x-large;
     @media (max-width: 960px)
   {
       grid-template-columns: 1fr;
+      
   } 
 
   }
@@ -477,12 +513,12 @@ font-size: x-large;
 
   .commander{
     text-align: center;
-    margin-bottom: 5rem;
+    padding-bottom: 4rem;
   button{
     @include vari.button;
     @include vari.button-shadow;
     &:hover{
-        @include vari.hover-effet;
+        @include vari.hover-effet-button;
         cursor: pointer;
       
     }

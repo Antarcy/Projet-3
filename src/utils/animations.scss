@@ -9,9 +9,38 @@
 
 @keyframes pop-up{
     0%{
-        transform: scale(0);
+        transform: translateY(90%);
+        opacity: 0;
     }
     100%{
-        transform: scale(1);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes loading{
+    0%{
+     
+        opacity: 0.90;
+        
+    }
+    20%{
+        opacity: 0; 
+    }
+    40%{
+        transform: scale(0); 
+    }
+    100%{
+        opacity: 0; 
+        transform: scale(0); 
+    }
+   
+}
+
+
+@keyframes spin{
+    to{
+         transform: rotate(360deg);
+         opacity: 1;
     }
 }
