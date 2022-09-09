@@ -157,7 +157,9 @@ button{
        }
         &:hover{
             @include vari.hover-effet;
-           
+           i.logo{
+            color: #9356DC;
+           }
         }
         & i.logo{
             color: grey;
@@ -232,24 +234,28 @@ top: 1rem;
     min-height: 12rem;
     background-size: cover;
     border-radius: 2rem 2rem 0 0;
+    background-position: center;
 }
     .images_resto2{
         background-image: url(../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
         min-height: 12rem;
         background-size: cover;
         border-radius: 2rem 2rem 0 0;
+        background-position: center;
     }
     .images_resto3{
         background-image: url(../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
         min-height: 12rem;
         background-size: cover;
         border-radius: 2rem 2rem 0 0;
+        background-position: center;
     }
     .images_resto4{
         background-image: url(../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
         min-height: 12rem;
         background-size: cover;
         border-radius: 2rem 2rem 0 0;
+        background-position: center;
     }
     
 }
@@ -517,6 +523,7 @@ font-size: x-large;
   .commander{
     text-align: center;
     padding-bottom: 4rem;
+    margin-bottom: -1rem;
   button{
     @include vari.button;
     @include vari.button-shadow;
