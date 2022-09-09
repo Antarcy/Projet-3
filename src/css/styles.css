@@ -18,7 +18,7 @@
 }
 @-webkit-keyframes pop-up {
   0% {
-    transform: translateY(90%);
+    transform: translateY(100%);
     opacity: 0;
   }
   100% {
@@ -28,7 +28,7 @@
 }
 @keyframes pop-up {
   0% {
-    transform: translateY(90%);
+    transform: translateY(100%);
     opacity: 0;
   }
   100% {
@@ -89,6 +89,10 @@ header {
   box-shadow: 1px 2px 3px grey;
   padding-bottom: 0.3rem;
   position: relative;
+}
+header h1 {
+  padding: 1rem;
+  margin: 0;
 }
 
 .loading_screen {
@@ -377,7 +381,7 @@ main {
   font-size: x-large;
   position: absolute;
   left: 1rem;
-  bottom: 1.1rem;
+  bottom: 1.5rem;
   right: 90%;
   color: rgb(54, 54, 54);
 }
@@ -400,7 +404,6 @@ main {
   font-size: 2rem;
   margin-top: 0rem;
   padding-top: 1rem;
-  margin-bottom: 0.4rem;
   background-color: white;
 }
 
