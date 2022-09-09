@@ -18,3 +18,13 @@
     margin-top: 1.3rem;
     font-size: 1.1rem;
 }
+
+@mixin font {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing:antialiased;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 400;
+}
