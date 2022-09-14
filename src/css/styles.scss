@@ -35,12 +35,12 @@ header{
     opacity: 0.90;
     height: 100vh;
     z-index: 1;
-    animation: loading 3s 1s forwards;
+    animation: loading 1s 1s forwards;
     display: grid;
     place-items: center;
     transform-origin: center;
     &::after{
-        animation: spin 1s linear infinite;
+        animation: spin 2s linear infinite;
         content: "";
         height: 100px;
         width: 100px;    
