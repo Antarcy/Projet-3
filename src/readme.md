@@ -16,3 +16,9 @@ En cas de test de projet :
 Voici le lien du site direct  :
 
 Le Sass étant compilé et le projet disposant même d'un css préfixé, le projet est ouvrable sur n'importe qu'elles machines. 
+
+
+
+Technologie : Css / Scss / Html. 
+
+Modules : Sass / Autoprefixer. 
