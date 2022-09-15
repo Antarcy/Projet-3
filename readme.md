@@ -13,7 +13,7 @@ Réaliser du Scss/Sass afin de rendre un code plus organiser.
 
 En cas de test de projet : 
 
-Voici le lien du site direct  :
+Voici le lien du site direct  : https://antarcy.github.io/Projet-3/index.html
 
 Le Sass étant compilé et le projet disposant même d'un css préfixé, le projet est ouvrable sur n'importe qu'elles machines. 
 
