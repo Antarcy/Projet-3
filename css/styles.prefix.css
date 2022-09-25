@@ -560,6 +560,10 @@ main {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.menu_plats .pres_plats_desc p {
+  font-size: 0.85rem;
+}
+
 .menu_plats .menu-prix_check {
   background-color: #99E2D0;
   border-radius: 0 1rem 1rem 0;
