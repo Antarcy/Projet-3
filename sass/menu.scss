@@ -39,7 +39,7 @@
   font-size: 2rem;
   margin-top: 0rem;
   padding-top: 1rem;
-
+  cursor: default;
   background-color: white;
 }
 
@@ -153,11 +153,6 @@
       text-overflow: ellipsis;
     }
   }
-
-  .menu_plats .pres_plats_desc p {
-    font-size: 0.85rem;
-  }
-  
 
   .menu-prix_check {
     background-color: #99e2d0;
