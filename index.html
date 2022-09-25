@@ -1,114 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/15cb4bb31d.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./css/normalize.css"/>
-  <link rel="stylesheet" href="./css/styles.prefix.css"/>
-  <title>Ohmyfood</title>
-  <meta name="title" content="Ohmyfood By Louis Le Gars">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/15cb4bb31d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.prefix.css" />
+    <title>Ohmyfood</title>
+    <meta name="title" content="Ohmyfood By Louis Le Gars" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/logo/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/logo/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/logo/favicon-16x16.png">
-  <link rel="manifest" href="../img/logo/site.webmanifest">
-</head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/logo/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../img/logo/site.webmanifest" />
+  </head>
 
-<body>
-<div class="loading_screen"></div>
-   <header>
-    <h1>Ohmyfood</h1>
-   </header>
+  <body>
+    <div class="loading_screen"></div>
+    <header>
+      <h1>Ohmyfood</h1>
+    </header>
 
+    <!--  LOCALISATION -->
+    <div class="lieu">
+      <i class="fa-solid fa-location-dot"></i>
+      <h2>Paris, Belleville</h2>
+    </div>
+    <main>
+      <!-- Section présentation -->
+      <div class="premiere_section">
+        <h2>
+          Réservez le menu qui<br />
+          vous convient
+        </h2>
+        <p>
+          Découvrez des restaurants d'exception,<br />
+          séléctionnés par nos soins.
+        </p>
+        <button>Explorer nos restaurants</button>
+      </div>
 
-<!--  LOCALISATION -->
-  <div class="lieu">
-    <i class="fa-solid fa-location-dot"></i>
-    <h2>Paris, Belleville</h2>
-  </div>
-  <main>
-<!-- Section présentation -->
-  <div class="premiere_section">
-    <h2>Réservez le menu qui<br> vous convient</h2>
-    <p>Découvrez des restaurants d'exception,<br> séléctionnés par nos soins.</p>
-    <button>Explorer nos restaurants</button>
-  </div>
+      <!-- Fonctionnement -->
+      <section class="fonctionnement">
+        <h2>Fonctionnement</h2>
 
-  <!-- Fonctionnement -->
-  <section class="fonctionnement">
+        <ol>
+          <li>
+            <i class="logo fa-solid fa-mobile-screen-button"></i>Choisissez un
+            restaurant
+          </li>
+          <li><i class="logo fa-solid fa-list"></i>Composez votre menu</li>
+          <li><i class="logo fa-solid fa-store"></i>Dégustez au restaurant</li>
+        </ol>
+      </section>
 
-   <h2>Fonctionnement</h2>
+      <section class="menu_section">
+        <h2>Restaurants</h2>
 
-   <ol>
-    <li> <i class="logo fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
-    <li> <i class="logo fa-solid fa-list"></i>Composez votre menu</li>
-    <li> <i class="logo fa-solid fa-store"></i>Dégustez au restaurant</li>
-    
-   </ol>
+        <div class="menu_carte">
+          <a href="./menus/menu-1.html" class="carte nouveau">
+            <div class="images_resto1"></div>
+            <div class="description_resto">
+              <h3>La palette du goût</h3>
+              <p>Ménilmontant</p>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </a>
 
-  </section>
+          <a href="./menus/menu-2.html" class="carte nouveau">
+            <div class="images_resto2"></div>
+            <div class="description_resto">
+              <h3>La note enchantée</h3>
+              <p>Charonne</p>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </a>
 
-<section class="menu_section">
-  <h2>Restaurants</h2>
+          <a href="./menus/menu-3.html" class="carte">
+            <div class="images_resto3"></div>
+            <div class="description_resto">
+              <h3>À la française</h3>
+              <p>Cité Rouge</p>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </a>
 
-<div class="menu_carte">
+          <a href="./menus/menu-4.html" class="carte">
+            <div class="images_resto4"></div>
+            <div class="description_resto">
+              <h3>Le délice des sens</h3>
+              <p>Folie-Méricourt</p>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
 
-<a href="./menus/menu-1.html" class="carte nouveau" >
-  <div class="images_resto1">  </div>
-  <div class="description_resto">
-    <h3>La palette du goût</h3>
-  <p>Ménilmontant</p>
-  <i class="fa-regular fa-heart"></i>
-  <i class="fa-solid fa-heart"></i>
-  </div>
-</a>
-
-<a href="./menus/menu-2.html" class="carte nouveau">
-  <div class="images_resto2">  </div>
-  <div class="description_resto">
-    <h3>La note enchantée</h3>
-  <p>Charonne</p>
-  <i class="fa-regular fa-heart"></i>
-  <i class="fa-solid fa-heart"></i>
-  </div>
-</a>
-
-<a href="./menus/menu-3.html" class="carte">
-  <div class="images_resto3">  </div>
-  <div class="description_resto">
-    <h3>À la française</h3>
-  <p>Cité Rouge</p>
-  <i class="fa-regular fa-heart"></i>
-  <i class="fa-solid fa-heart"></i>
-  </div>
-</a>
-
-<a href="./menus/menu-4.html" class="carte">
-  <div class="images_resto4">  </div>
-  <div class="description_resto">
-    <h3>Le délice des sens</h3>
-  <p>Folie-Méricourt</p>
-  <i class="fa-regular fa-heart"></i>
-   <i class="fa-solid fa-heart"></i>
-  </div>
-</a>
-</div>
-
-</section>
-</main>
-
-<footer class="pied_de_page">
-  <h2>Ohmyfood</h2>
-  <p><i class="couvert fa-solid fa-utensils"></i>Proposer un restaurant</p>
-  <p><i class="logomain fa-solid fa-handshake-angle"></i>Devenir partenaire</p>
-  <p>Mentions légales</p>
-  <p> 
-    <a href="mailto:contact@gmail.com">Contact</a>
-  </p>
-</footer>
-
-
-
-</body>
+    <footer class="pied_de_page">
+      <h2>Ohmyfood</h2>
+      <p><i class="couvert fa-solid fa-utensils"></i>Proposer un restaurant</p>
+      <p>
+        <i class="logomain fa-solid fa-handshake-angle"></i>Devenir partenaire
+      </p>
+      <p>Mentions légales</p>
+      <p>
+        <a href="mailto:contact@gmail.com">Contact</a>
+      </p>
+    </footer>
+  </body>
 </html>
